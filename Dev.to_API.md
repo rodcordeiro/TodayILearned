@@ -1,7 +1,7 @@
 # Dev.to API integrations Series
 
-  - [Starting with the API](001---Starting-with-the-API)
-  
+  - [Starting with the API](#001---Starting-with-the-API)
+
 
 ## 001 - Starting with the API
 
