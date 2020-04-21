@@ -10,11 +10,11 @@ On this doc I'll write about my process of learning to use the api of the dev.to
 
 We are going to send a GET request to `https://dev.to/api/articles`.
 
- #### curl
+#### curl
  ```shell
  curl https://dev.to/api/articles
  ```
- #### node
+#### node
 
  ```javascript
   var unirest = require("unirest");
@@ -79,13 +79,13 @@ We are going to send a GET request to `https://dev.to/api/articles`.
   }
  ```
 
-  ## 002 - Creating a Post with the API
+## 002 - Creating a Post with the API
 
    Ok, now we already know what to do to get the feed and the basic to work with the API, so, now we're going to post something using the API. To this, we must send a `POST` request to `/articles` with a the information about the post, see all the parameters possibilities at the [api documentation](https://docs.dev.to/api/).
 
-  #### curl
+#### curl
 
-  ```shell
+```shell
   curl --request POST \
   --url https://dev.to/api/articles \
   --header 'api-key: YOUR_API_TOKEN' \
@@ -101,11 +101,11 @@ We are going to send a GET request to `https://dev.to/api/articles`.
 		]
 	}
 }'
-  ```
+```
 
-  #### node
+#### node
 
-  ```javascript
+```javascript
   var unirest = require("unirest");
 
   unirest.post('https://dev.to/api/articles')
@@ -127,5 +127,5 @@ We are going to send a GET request to `https://dev.to/api/articles`.
     .then((response)=>{
       console.log(response.body)
     })
-  ```
+```
   That's all folks!!
