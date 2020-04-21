@@ -1,6 +1,9 @@
 # Dev.to API integrations Series
 
-## Starting with the API - 001
+  - [Starting with the API](001---Starting-with-the-API)
+  
+
+## 001 - Starting with the API
 
 On this doc I'll write about my process of learning to use the api of the dev.to. To requests that needs an authorization, you can use the API Token or OAuth2 authentication. I'm going to use the API Token, so the first step is to acess your account settings and go to the account section (or [follow this link](https://dev.to/settings/account)) and generate your API Key. Our *hello world* will be a GET request that retrieves the posts of the feed, you can send some parameters, see all the possibilities at the [api documentation](https://docs.dev.to/api/#operation/getArticles).
 
