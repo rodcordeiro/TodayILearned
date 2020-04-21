@@ -1,6 +1,7 @@
 # Dev.to API integrations Series
 
-  - [Starting with the API](#001---Starting-with-the-API)
+  - [Starting with the API](#001---starting-with-the-api)
+  - [Creating a post with the API](#002---creating-a-post-with-the-api)
 
 
 ## 001 - Starting with the API
@@ -14,8 +15,15 @@ We are going to send a GET request to `https://dev.to/api/articles`.
  curl https://dev.to/api/articles
  ```
  #### node
+
  ```javascript
-  unirest.get('https://dev.to/api/articles')
+  var unirest = require("unirest");
+  
+  unirest
+    .get('https://dev.to/api/articles')
+    .then((response)=>{
+      console.log(response.body)
+    })
  ```
  This will return a list of objects containing some information about the article and its author, see an example below:
  
@@ -70,3 +78,54 @@ We are going to send a GET request to `https://dev.to/api/articles`.
     }
   }
  ```
+
+  ## 002 - Creating a Post with the API
+
+   Ok, now we already know what to do to get the feed and the basic to work with the API, so, now we're going to post something using the API. To this, we must send a `POST` request to `/articles` with a the information about the post, see all the parameters possibilities at the [api documentation](https://docs.dev.to/api/).
+
+  #### curl
+
+  ```shell
+  curl --request POST \
+  --url https://dev.to/api/articles \
+  --header 'api-key: YOUR_API_TOKEN' \
+  --header 'content-type: application/json' \
+  --data '{
+	"article": {
+		"title": "Creating new post",
+		"published": true,
+		"body_markdown": "Hey there, here go some post.",
+		"tags": [
+			"todayilearned",
+			"showdev"
+		]
+	}
+}'
+  ```
+
+  #### node
+
+  ```javascript
+  var unirest = require("unirest");
+
+  unirest.post('https://dev.to/api/articles')
+    .type('json')
+    .headers({
+      'api-key':'YOUR_API_TOKEN'
+    })
+    .send({
+      "article": {
+        "title": "Creating new post",
+        "published": true,
+        "body_markdown": "Hey there, here go some post.",
+        "tags": [
+          "todayilearned",
+          "showdev"
+        ]
+      }
+    })
+    .then((response)=>{
+      console.log(response.body)
+    })
+  ```
+  That's all folks!!

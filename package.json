@@ -1,0 +1,23 @@
+{
+  "name": "TodayILearned",
+  "version": "1.0.0",
+  "description": "This repository will host my 'TIL' files.",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodcordeiro/TodayILearned.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodcordeiro/TodayILearned/issues"
+  },
+  "homepage": "https://github.com/rodcordeiro/TodayILearned#readme",
+  "dependencies": {
+    "unirest": "^0.6.0"
+  }
+}
