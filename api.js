@@ -66,7 +66,8 @@ unirest.post('https://dev.to/api/articles')\n\
 ```\n\
 That's all folks!!\n\
 ";
-console.log('Creating html')
+
+
 unirest
     .post('https://api.github.com/markdown')
     .type('json')
@@ -88,8 +89,8 @@ unirest
         })
         .send({
         "article": {
-            "title": "Dev.to API 002 - Creating a Post",
-            "published": true,
+            "title": "Some test",
+            "published": false,
             "body_markdown": html,
             "main_image":"https://images.unsplash.com/photo-1544256718-3bcf237f3974?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyNzg0MX0",
             "tags": [
