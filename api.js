@@ -15,57 +15,8 @@ async function sendMessage(template){
           });
   }
 
-var markdown = "## 002 - Creating a Post with the API\n\
-\n\
-Ok, now we already know what to do to get the feed and the basic to work with the API, so, now we're going to post something using the API. To this, we must send a `POST` request to `/articles` with a the information about the post, see all the parameters possibilities at the [api documentation](https://docs.dev.to/api/).\n\
-\n\
-#### curl\n\
-\n\
-```shell\n\
-curl --request POST \ \n\
---url https://dev.to/api/articles \ \n\
---header 'api-key: YOUR_API_TOKEN' \ \n\
---header 'content-type: application/json' \ \n\
---data '{ \n\
- \"article\": { \n\
-     \"title\": \"Creating new post\", \n\
-     \"published\": true, \n\
-     \"body_markdown\": \"Hey there, here go some post.\", \n\
-     \"tags\": [ \n\
-         \"todayilearned\", \n\
-         \"showdev\" \n\
-     ]\n\
- }\n\
-}'\n\
-```\n\
-\n\
-#### node\n\
-\n\
-```javascript\n\
-var unirest = require(\"unirest\");\n\
-\n\
-unirest.post('https://dev.to/api/articles')\n\
- .type('json')\n\
- .headers({\n\
-   'api-key':'YOUR_API_TOKEN'\n\
- })\n\
- .send({\n\
-   \"article\": {\n\
-     \"title\": \"Creating new post\",\n\
-     \"published\": true,\n\
-     \"body_markdown\": \"Hey there, here go some post.\",\n\
-     \"tags\": [\n\
-       \"todayilearned\",\n\
-       \"showdev\"\n\
-     ]\n\
-   }\n\
- })\n\
- .then((response)=>{\n\
-   console.log(response.body)\n\
- })\n\
-```\n\
-That's all folks!!\n\
-";
+var markdown = "# Some text \
+And some *markdown* **here**";
 
 
 unirest
