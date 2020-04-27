@@ -2,8 +2,8 @@
 
  Hey guys! Here I'm gonna tell you about some tips and tricks I've learned as IT Analyst working on a Helpdesk company.
 
- 1. [Problemns with Remote Desktop](#Problemns-with-Remote-Desktop)
-    1. [The remote session was disconnected because there are no remote desktop client access licenses for this computer](#The-remote-session-was-disconnected-because-there-are-no-remote-desktop-client-access-licenses-for-this-computer)
+ 1. [Problemns with Remote Desktop](#problemns-with-remote-desktop-mstsc)
+    1. [The remote session was disconnected because there are no remote desktop client access licenses for this computer](#the-remote-session-was-disconnected-because-there-are-no-remote-desktop-client-access-licenses-for-this-computer)
         
 
 ## Problemns with Remote Desktop (MSTSC)
