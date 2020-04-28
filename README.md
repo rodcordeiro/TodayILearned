@@ -1,7 +1,3 @@
----
-modified: 2020-04-28T15:38:41-03:00
----
-
 # Today I Learned
 
  This repository will host my 'TIL' files.
