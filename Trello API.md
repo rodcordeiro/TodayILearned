@@ -11,3 +11,29 @@ title: Trello API
  1. [Starting with the API](#001---starting-with-the-api)
  
 ## 001 - Starting with the API
+ 
+ get boards
+ curl https://api.trello.com/1/members/me/boards?fields=name,url&key={apiKey}&token={apiToken}
+
+ get board info
+ https://api.trello.com/1/boards/{id}?key={apiKey}&token={apiToken}
+
+
+ 
+ get all board lists
+ https://api.trello.com/1/boards/{id}/lists?key={apiKey}&token={apiToken}
+
+
+//002 working with the cards
+
+get all board cards
+ https://api.trello.com/1/boards/{id}/cards?key={apiKey}&token={apiToken}
+
+ get list cards
+ https://api.trello.com/1/Lists/{id}/cards?key={apiKey}&token={apiToken}
+
+ create card
+ https://api.trello.com/1/cards?key={apiKey}&token={apiToken}&name={card_name}&desc={card_description}&idList={list_id)&idLabels={label_id}
+
+ delete
+ https://api.trello.com/1/cards/{id}?key={apiKey}&token={apiToken}
