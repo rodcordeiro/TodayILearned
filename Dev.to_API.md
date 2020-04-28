@@ -1,7 +1,7 @@
 # Dev.to API integrations Series
 
-  - [Starting with the API](#001---starting-with-the-api)
-  - [Creating a post with the API](#002---creating-a-post-with-the-api)
+  1. [Starting with the API](#001---starting-with-the-api)
+  1. [Creating a post with the API](#002---creating-a-post-with-the-api)
 
 
 ## 001 - Starting with the API
