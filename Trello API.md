@@ -4,12 +4,13 @@ modified: 2020-04-28T15:47:12-03:00
 title: Trello API
 ---
 
-//notPosted
+
 # Trello API
  Hey guys, on this serie we're going to see how to work with the Trello API.
 
  1. [Starting with the API](#001---starting-with-the-api)
- 
+
+//notPosted 
 ## 001 - Starting with the API
  
  get boards
