@@ -1,3 +1,7 @@
+---
+created: 2020-04-27T13:00:00-03:00
+---
+
 # IT Support tips & quicknotes
 
  Hey guys! Here I'm gonna tell you about some tips and tricks I've learned as IT Analyst working on a Helpdesk company.
