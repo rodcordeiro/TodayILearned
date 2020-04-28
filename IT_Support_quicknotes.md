@@ -1,5 +1,6 @@
 ---
 created: 2020-04-27T13:00:00-03:00
+title: IT tricks and notes
 ---
 
 # IT Support tips & quicknotes
